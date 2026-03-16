@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+
+# Data
+data/raw/
+data/processed/
+
+# Outputs / artifacts
+outputs/
+models/
+mlruns/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
