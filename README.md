@@ -102,8 +102,8 @@ Python • MLflow • Airflow • FastAPI • Docker • Grafana • Evidently �
 
 # Author
 
-# Sonja Sungur
-# AI Systems Engineering • MLOps • Operational AI
+Sonja Sungur
+AI Systems Engineering • MLOps • Operational AI
 
 🌐 https://mscisystems.com
 
