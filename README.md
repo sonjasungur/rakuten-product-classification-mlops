@@ -1,74 +1,109 @@
-# Rakuten Product Classification - MLOps Project
+# Rakuten Product Classification — MLOps Pipeline
 
-## Project Overview
+Production-oriented MLOps pipeline for e-commerce product classification using machine learning, experiment tracking, orchestration and deployment workflows.
 
-This project builds an end-to-end machine learning pipeline to classify Rakuten e-commerce products.
+🌐 Website: https://mscisystems.com
 
-The model predicts product categories based on:
+---
 
-- product title (item_name)
-- product description (item_caption)
-- product images
+# Project Overview
 
-The focus of the project is not only the model, but the full MLOps pipeline architecture.
+This project demonstrates an end-to-end MLOps workflow for classifying Rakuten e-commerce products using:
 
-## Dataset
+* product title (`item_name`)
+* product description (`item_caption`)
+* product images
+
+The project focuses not only on model development, but on building a scalable machine learning system including:
+
+* experiment tracking
+* orchestration
+* model registry workflows
+* API deployment
+* monitoring
+* reproducible pipelines
+
+---
+
+# MLOps Stack
+
+* MLflow (Experiment Tracking & Model Registry)
+* Airflow (Pipeline Orchestration)
+* FastAPI (Inference API)
+* Docker (Containerization)
+* Grafana (Monitoring)
+* Evidently (Data Drift Monitoring)
+* AWS / S3-based workflows
+
+---
+
+# Dataset
 
 Rakuten Institute of Technology e-commerce product classification dataset.
 
 The dataset contains:
-- product titles
-- product descriptions
-- product images
-- product category labels
 
-## Project Structure
+* product titles
+* product descriptions
+* product images
+* category labels
 
-rakuten-product-classification-mlops
-│
+---
+
+# Project Structure
+
+```text
+rakuten-product-classification-mlops/
+
 ├── data/
-│   ├── raw/            # original dataset
-│   └── processed/      # cleaned / transformed data
+│   ├── raw/
+│   └── processed/
 │
-├── notebooks/          # exploration and experiments
+├── notebooks/
 │
 ├── src/
-│   ├── data/           # data loading
-│   ├── features/       # feature engineering
-│   ├── models/         # training and prediction
-│   ├── api/            # inference API
-│   └── utils/          # helper functions
+│   ├── data/
+│   ├── features/
+│   ├── models/
+│   ├── api/
+│   ├── monitoring/
+│   └── utils/
 │
-├── tests/              # unit tests
-├── outputs/            # predictions / artifacts
+├── tests/
+├── outputs/
+├── docker/
+├── airflow/
+├── mlruns/
 │
 ├── requirements.txt
+├── docker-compose.yml
 ├── README.md
-├── .gitignore
 └── main.py
+```
 
-## Setup
+---
 
-Create virtual environment
+# Key Features
 
-python3 -m venv .venv
-source .venv/bin/activate
+* End-to-end MLOps workflow
+* Experiment tracking with MLflow
+* Model Registry workflows
+* Airflow orchestration
+* API deployment
+* Monitoring & observability
+* Drift detection workflows
+* Reproducible ML pipelines
 
-Install dependencies
+---
 
-pip install -r requirements.txt
+# Technologies
 
-## First Goal
+Python • MLflow • Airflow • FastAPI • Docker • Grafana • Evidently • scikit-learn • AWS • Machine Learning • MLOps
 
-Build a simple baseline model using text features (TF-IDF + Logistic Regression) before integrating images and deploying the inference API.
+# Author
 
-## Technologies
+# Sonja Sungur
+# AI Systems Engineering • MLOps • Operational AI
 
-Python  
-scikit-learn  
-FastAPI  
-Docker (later)  
-MLflow (later)  
-DVC (later)  
-Airflow (later)
+🌐 https://mscisystems.com
 
