@@ -1,0 +1,60 @@
+[2026-05-21T05:55:51.751+0000] {processor.py:161} INFO - Started process (PID=51) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:55:51.753+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:55:51.755+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.755+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:55:51.763+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:55:51.875+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.874+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:rakuten_mlops_pipeline
+[2026-05-21T05:55:51.886+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.886+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:rakuten_mlops_pipeline
+[2026-05-21T05:55:51.896+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.896+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:rakuten_mlops_pipeline
+[2026-05-21T05:55:51.897+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.896+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:55:51.904+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.904+0000] {dag.py:3111} INFO - Creating ORM DAG for rakuten_mlops_pipeline
+[2026-05-21T05:55:51.905+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:55:51.905+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:55:51.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.180 seconds
+[2026-05-21T05:56:22.872+0000] {processor.py:161} INFO - Started process (PID=71) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:56:22.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:56:22.875+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:56:22.874+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:56:22.882+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:56:22.898+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:56:22.898+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:56:22.907+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:56:22.907+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:56:22.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.077 seconds
+[2026-05-21T05:56:53.021+0000] {processor.py:161} INFO - Started process (PID=72) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:56:53.022+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:56:53.023+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:56:53.023+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:56:53.031+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:56:53.048+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:56:53.048+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:56:53.057+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:56:53.057+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:56:53.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.082 seconds
+[2026-05-21T05:57:23.176+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:57:23.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:57:23.180+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:57:23.179+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:57:23.188+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:57:23.206+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:57:23.205+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:57:23.215+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:57:23.215+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:57:23.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.071 seconds
+[2026-05-21T05:57:53.324+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:57:53.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:57:53.328+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:57:53.328+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:57:53.335+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:57:53.352+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:57:53.352+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:57:53.362+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:57:53.362+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:57:53.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.069 seconds
+[2026-05-21T05:58:23.477+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:58:23.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:58:23.481+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:58:23.480+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:58:23.489+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:58:23.506+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:58:23.506+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:58:23.515+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:58:23.515+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:58:23.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.087 seconds
+[2026-05-21T05:58:53.609+0000] {processor.py:161} INFO - Started process (PID=79) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:58:53.610+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:58:53.613+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:58:53.612+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:58:53.620+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:58:53.639+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:58:53.638+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:58:53.648+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:58:53.648+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:58:53.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.068 seconds
+[2026-05-21T05:59:23.761+0000] {processor.py:161} INFO - Started process (PID=80) to work on /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:59:23.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/rakuten_pipeline.py for tasks to queue
+[2026-05-21T05:59:23.766+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:59:23.766+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:59:23.773+0000] {processor.py:840} INFO - DAG(s) 'rakuten_mlops_pipeline' retrieved from /opt/airflow/dags/rakuten_pipeline.py
+[2026-05-21T05:59:23.790+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:59:23.789+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-05-21T05:59:23.798+0000] {logging_mixin.py:188} INFO - [2026-05-21T05:59:23.798+0000] {dag.py:3947} INFO - Setting next_dagrun for rakuten_mlops_pipeline to None, run_after=None
+[2026-05-21T05:59:23.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/rakuten_pipeline.py took 0.069 seconds

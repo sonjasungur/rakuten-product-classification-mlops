@@ -1,0 +1,67 @@
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: rakuten-prometheus
+    ports:
+      - "9090:9090"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+  pushgateway:
+    image: prom/pushgateway:latest
+    container_name: rakuten-pushgateway
+    ports:
+      - "9091:9091"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: rakuten-grafana
+    ports:
+      - "3000:3000"
+
+  mlflow:
+    image: python:3.11-slim
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow_data:/mlruns
+    command: >
+      sh -c "pip install mlflow &&
+             mlflow server --host 0.0.0.0 --port 5000 --allowed-hosts '*'
+             --backend-store-uri sqlite:////mlruns/mlflow.db
+             --default-artifact-root /mlruns"
+
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: rakuten-airflow
+    user: "50000:0"
+    restart: unless-stopped
+    command: standalone
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW_HOME: /opt/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////opt/airflow/airflow.db
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+      GIT_PYTHON_REFRESH: quiet
+    volumes:
+      - ./airflow_runtime/dags:/opt/airflow/dags
+      - airflow_logs:/opt/airflow/logs
+      - ./airflow_runtime/plugins:/opt/airflow/plugins
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+      - ./outputs:/opt/airflow/outputs
+      - mlflow_data:/mlruns
+      - ./db:/opt/airflow/db
+      - ./models:/opt/airflow/models
+
+volumes:
+  mlflow_data:
+  airflow_logs:
+

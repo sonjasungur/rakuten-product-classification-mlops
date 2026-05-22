@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rakuten Data Drift Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            padding: 40px;
+        }
+        .card {
+            background: #111827;
+            border: 1px solid #334155;
+            border-radius: 18px;
+            padding: 28px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 {
+            color: #38bdf8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 24px;
+        }
+        th, td {
+            border-bottom: 1px solid #334155;
+            padding: 14px;
+            text-align: left;
+        }
+        th {
+            color: #93c5fd;
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: #0f766e;
+            color: white;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">MLOps Monitoring</span>
+        <h1>Rakuten Data Drift Report</h1>
+        <p>
+            This report compares reference and current product category distributions
+            to identify potential data drift in the classification pipeline.
+        </p>
+
+        <h2>Dataset Summary</h2>
+        <ul>
+            <li>Reference rows: 10</li>
+            <li>Current rows: 10</li>
+            <li>Compared feature: category</li>
+        </ul>
+
+        <h2>Category Distribution Drift</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Reference Share</th>
+                    <th>Current Share</th>
+                    <th>Absolute Drift</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+    <tr>
+        <td>electronics</td>
+        <td>0.4</td>
+        <td>0.5</td>
+        <td>0.1</td>
+    </tr>
+    
+    <tr>
+        <td>fashion</td>
+        <td>0.3</td>
+        <td>0.2</td>
+        <td>0.1</td>
+    </tr>
+    
+    <tr>
+        <td>home</td>
+        <td>0.3</td>
+        <td>0.3</td>
+        <td>0.0</td>
+    </tr>
+    
+            </tbody>
+        </table>
+
+        <p style="margin-top: 30px; color: #94a3b8;">
+            Demo report generated for a production-oriented MLOps monitoring workflow.
+        </p>
+    </div>
+</body>
+</html>

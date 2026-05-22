@@ -1,6 +1,4 @@
-pandas
 numpy
-scikit-learn
 matplotlib
 seaborn
 jupyter
@@ -11,3 +9,11 @@ python-multipart
 pillow
 opencv-python
 tqdm
+pandas
+scikit-learn
+joblib
+mlflow
+fastapi
+uvicorn
+prometheus-client
+evidently
