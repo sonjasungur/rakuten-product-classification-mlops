@@ -28,3 +28,18 @@ mlruns/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local artifacts
+mlruns/
+outputs/
+airflow.db
+airflow_runtime/logs/
+__pycache__/
+*.pyc
+.venv/
+.env
+*.db
+
+# Large data
+data/raw/
+data/images/
